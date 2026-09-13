@@ -30,7 +30,7 @@ export const PreferencesCard = () => {
                 <p className="text-sm font-medium">{p.label}</p>
                 <p className="text-xs text-muted-foreground">{p.desc}</p>
               </div>
-              <Switch defaultChecked={i !== 2} />
+              <Switch defaultChecked={i !== 2} className={"shadow-md "} />
             </div>
           </div>
         ))}
