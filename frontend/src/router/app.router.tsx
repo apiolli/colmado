@@ -10,6 +10,7 @@ import { ReportsPage } from "@/features/reports/pages/ReportsPage";
 import { LoginPage } from "@/features/auth/pages/LoginPage";
 import { RegisterPage } from "@/features/auth/pages/RegisterPage";
 import { AuthLayout } from "@/features/auth/layout/AuthLayout";
+import { ProfilePage } from "@/features/profile/pages/ProfilePage";
 
 export const appRouter = createBrowserRouter([
   // Rutas principales
@@ -44,6 +45,10 @@ export const appRouter = createBrowserRouter([
       {
         path: "reports",
         element: <ReportsPage />,
+      },
+      {
+        path: "profile",
+        element: <ProfilePage />,
       },
     ],
   },
