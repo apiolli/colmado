@@ -1,0 +1,6 @@
+@Colmado.Presentation_HostAddress = http://localhost:5189
+
+GET {{Colmado.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

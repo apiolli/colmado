@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\bin\Debug\net10.0\Colmado.Application.deps.json
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\bin\Debug\net10.0\Colmado.Application.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\bin\Debug\net10.0\Colmado.Application.pdb
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\bin\Debug\net10.0\Colmado.Domain.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\bin\Debug\net10.0\Colmado.Domain.pdb
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado..A4899750.Up2Date
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\refint\Colmado.Application.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.pdb
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\ref\Colmado.Application.dll

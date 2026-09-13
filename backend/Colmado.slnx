@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Colmado.Application/Colmado.Application.csproj" />
+  <Project Path="Colmado.Domain/Colmado.Domain.csproj" />
+  <Project Path="Colmado.Infrastructure/Colmado.Infrastructure.csproj" />
+  <Project Path="Colmado.Presentation/Colmado.Presentation.csproj" />
+</Solution>
