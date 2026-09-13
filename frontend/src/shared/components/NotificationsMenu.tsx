@@ -6,6 +6,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
 import { toast } from "@/components/ui/toast";
 import { notifications } from "@/store/mock-data";
 import { cn } from "cn";
@@ -17,7 +18,6 @@ import {
   TriangleAlert,
 } from "lucide-react";
 import { useState } from "react";
-import { Separator } from "react-resizable-panels";
 
 const notifIcon = {
   stock: TriangleAlert,
@@ -45,7 +45,7 @@ export const NotificationsMenu = () => {
           )}
         </Button>
       </PopoverTrigger>
-      <PopoverContent align="end" className="w-85 p-0">
+      <PopoverContent align="end" className="w-85 p-0 gap-0">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <p className="text-sm font-semibold">Notificaciones</p>
@@ -69,8 +69,9 @@ export const NotificationsMenu = () => {
             <CheckCheck className="size-3.5" /> Leer todas
           </Button>
         </div>
-        <Separator />
-        <ScrollArea className="h-75">
+
+        <Separator className="" />
+        <ScrollArea className="h-60">
           <div className="flex flex-col">
             {items.map((n) => {
               const Icon = notifIcon[n.kind];
@@ -129,6 +130,7 @@ export const NotificationsMenu = () => {
           </div>
         </ScrollArea>
         <Separator />
+
         <div className="p-2">
           <Button
             variant="ghost"

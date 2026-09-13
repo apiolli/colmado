@@ -19,7 +19,6 @@ import {
   Croissant,
   CupSoda,
   Milk,
-  Package,
   ShoppingBasket,
   SprayCan,
   type LucideIcon,
@@ -199,13 +198,11 @@ export const CategoryDialog = () => {
                   onClick={() => setSelectedIcon(key)}
                   className={cn(
                     "size-8 rounded-lg border border-border ring-offset-2 ring-offset-background cursor-pointer flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors",
-                    // Si está seleccionado, aplica el anillo (ring) y cambia el color del icono
                     selectedIcon === key
                       ? "ring-2 ring-ring border-transparent text-foreground bg-accent"
                       : "",
                   )}
                 >
-                  {/* 4. Renderizamos el componente del icono directamente dentro del botón */}
                   <IconComponent className="size-5" />
                 </button>
               ))}
