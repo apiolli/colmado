@@ -8,33 +8,10 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { toast } from "@/components/ui/toast";
 import { useDialog } from "@/hooks/useDialog";
 
-export const DeleteCategoryDialog = () => {
+export const DeleteProductDialog = () => {
   const { isDialogOpen, handleDialogChange } = useDialog();
-
-  const confirmDelete = () => {
-    {
-      /* Toast de categoria eliminada con boton de deshacer el cambio*/
-    }
-
-    // toast.success("Categoría eliminada", {
-    //   description: `${removed.name} se quitó del catálogo.`,
-    //   action: {
-    //     label: "Deshacer",
-    //     onClick: () => setList((prev) => [...prev, removed]),
-    //   },
-    // });
-
-    toast.add({
-      type: "success",
-      title: "Categoría eliminada",
-      description: `{Nombre categoria} se quitó del catálogo.`,
-    });
-    handleDialogChange(false);
-  };
-
   return (
     <AlertDialog
       open={isDialogOpen("delete")}
@@ -43,17 +20,17 @@ export const DeleteCategoryDialog = () => {
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>
-            ¿Eliminar “{"categoria a eliminar"}”?
+            ¿Eliminar “{"nombre del producto"}”?
           </AlertDialogTitle>
           <AlertDialogDescription>
-            Los {"cantidad de productos"} productos de esta categoría quedarán
-            sin clasificar.
+            Esta acción quitará el producto del catálogo y de las listas del
+            punto de venta.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancelar</AlertDialogCancel>
           <AlertDialogAction
-            onClick={confirmDelete}
+            onClick={() => handleDialogChange(false)}
             className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
           >
             Eliminar

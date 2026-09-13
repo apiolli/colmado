@@ -13,5 +13,10 @@ export const useDialog = () => {
     if (!isOpen) setSearchParams("");
   };
 
+  // const handleOpenDialog = (entity: T, dialog: string) => {
+  //   searchParams.set("dialog", dialog);
+  //   setSearchParams(searchParams);
+  // };
+
   return { isDialogOpen, handleDialogChange };
 };

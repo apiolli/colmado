@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/toast";
 import { categories, type Category } from "@/store/mock-data";
 import { useState } from "react";
-import { useDialog } from "../hooks/useDialog";
+import { useDialog } from "@/hooks/useDialog";
 import {
   Cookie,
   Croissant,

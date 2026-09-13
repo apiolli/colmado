@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { ColmadoLayout } from "@/shared/layouts/ColmadoLayout";
 import { DasboardPage } from "@/features/dashboard/pages/DasboardPage";
-import { Products } from "@/features/products/pages/Products";
+import { ProductsPage } from "@/features/products/pages/ProductsPage";
 import { CategoriesPage } from "@/features/categories/pages/CategoriesPage";
 import { NewSalePage } from "@/features/new-sale/pages/NewSalePage";
 import { SalesHistoryPage } from "@/features/sales-history/pages/SalesHistoryPage";
@@ -11,7 +11,6 @@ import { LoginPage } from "@/features/auth/pages/LoginPage";
 import { RegisterPage } from "@/features/auth/pages/RegisterPage";
 import { AuthLayout } from "@/features/auth/layout/AuthLayout";
 import { ProfilePage } from "@/features/profile/pages/ProfilePage";
-import { CategoryDialog } from "@/features/categories/components/CategoryDialog";
 
 export const appRouter = createBrowserRouter([
   // Rutas principales
@@ -25,7 +24,7 @@ export const appRouter = createBrowserRouter([
       },
       {
         path: "products/",
-        element: <Products />,
+        element: <ProductsPage />,
       },
       {
         path: "categories",
