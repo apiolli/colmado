@@ -1,4 +1,4 @@
-import { CategoriesCard } from "./CategoriesCard";
+import { CategoryCard } from "./CategoryCard";
 import type { Category } from "@/store/mock-data";
 
 interface Props {
@@ -9,7 +9,7 @@ export const CategoriesGrid = ({ categories }: Props) => {
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {categories.map((category) => (
-        <CategoriesCard category={category} key={category.id} />
+        <CategoryCard category={category} key={category.id} />
       ))}
     </div>
   );

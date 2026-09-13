@@ -9,19 +9,12 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
 import { toast } from "@/components/ui/toast";
-import { categories, type Category } from "@/store/mock-data";
-import { useState } from "react";
+import { useDialog } from "../hooks/useDialog";
 
 export const DeleteCategoryDialog = () => {
-  const [list, setList] = useState<Category[]>(categories);
-  const [toDelete, setToDelete] = useState<Category | null>(null);
+  const { isDialogOpen, handleDialogChange } = useDialog();
 
   const confirmDelete = () => {
-    if (!toDelete) return;
-    const removed = toDelete;
-    setList((prev) => prev.filter((c) => c.id !== removed.id));
-    setToDelete(null);
-
     {
       /* Toast de categoria eliminada con boton de deshacer el cambio*/
     }
@@ -37,21 +30,24 @@ export const DeleteCategoryDialog = () => {
     toast.add({
       type: "success",
       title: "Categoría eliminada",
-      description: `${removed.name} se quitó del catálogo.`,
+      description: `{Nombre categoria} se quitó del catálogo.`,
     });
+    handleDialogChange(false);
   };
 
   return (
     <AlertDialog
-      open={!!toDelete}
-      onOpenChange={(o) => !o && setToDelete(null)}
+      open={isDialogOpen("delete")}
+      onOpenChange={handleDialogChange}
     >
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogTitle>¿Eliminar “{toDelete?.name}”?</AlertDialogTitle>
+          <AlertDialogTitle>
+            ¿Eliminar “{"categoria a eliminar"}”?
+          </AlertDialogTitle>
           <AlertDialogDescription>
-            Los {toDelete?.productCount ?? 0} productos de esta categoría
-            quedarán sin clasificar.
+            Los {"cantidad de productos"} productos de esta categoría quedarán
+            sin clasificar.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
