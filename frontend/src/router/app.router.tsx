@@ -11,6 +11,7 @@ import { LoginPage } from "@/features/auth/pages/LoginPage";
 import { RegisterPage } from "@/features/auth/pages/RegisterPage";
 import { AuthLayout } from "@/features/auth/layout/AuthLayout";
 import { ProfilePage } from "@/features/profile/pages/ProfilePage";
+import { CategoryDialog } from "@/features/categories/components/CategoryDialog";
 
 export const appRouter = createBrowserRouter([
   // Rutas principales

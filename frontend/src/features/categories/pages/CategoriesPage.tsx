@@ -18,6 +18,7 @@ import { toast } from "@/components/ui/toast";
 import { CategoriesGrid } from "../components/CategoriesGrid";
 import { CategoryDialog } from "../components/CategoryDialog";
 import { DeleteCategoryDialog } from "../components/DeleteCategoryDialog";
+import { useSearchParams } from "react-router";
 
 type Errors = { name?: string | undefined; description?: string | undefined };
 
@@ -31,13 +32,17 @@ export const CategoriesPage = () => {
   const [errors, setErrors] = useState<Errors>({});
   const [toDelete, setToDelete] = useState<Category | null>(null);
 
+  const [searchParams, setSearchParamas] = useSearchParams();
+
   const openCreate = () => {
     setEditing(null);
     setName("");
     setDescription("");
     setColor("sky");
     setErrors({});
-    setOpen(true);
+
+    searchParams.set("dialog", "open");
+    setSearchParamas(searchParams);
   };
 
   return (

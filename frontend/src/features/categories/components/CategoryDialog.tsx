@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/toast";
 import { categories, type Category } from "@/store/mock-data";
 import { useState } from "react";
+import { useSearchParams } from "react-router";
 
 type Errors = { name?: string | undefined; description?: string | undefined };
 
@@ -27,7 +28,6 @@ const swatches = [
 
 export const CategoryDialog = () => {
   const [list, setList] = useState<Category[]>(categories);
-  const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState<Category | null>(null);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -94,11 +94,21 @@ export const CategoryDialog = () => {
         description: `${name.trim()} está lista para usarse.`,
       });
     }
-    setOpen(false);
+    setSearchParams("");
+  };
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const dialog = searchParams.get("dialog");
+
+  const isDialogOpen = dialog === "open" ? true : false;
+
+  const handleDialogChange = (isOpen: boolean) => {
+    if (!isOpen) setSearchParams("");
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={isDialogOpen} onOpenChange={handleDialogChange}>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>
@@ -161,7 +171,7 @@ export const CategoryDialog = () => {
           </div>
         </div>
         <DialogFooter>
-          <Button variant="outline" onClick={() => setOpen(false)}>
+          <Button variant="outline" onClick={() => setSearchParams("")}>
             Cancelar
           </Button>
           <Button onClick={submit}>
