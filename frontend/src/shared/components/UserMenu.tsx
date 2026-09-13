@@ -6,6 +6,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuItem,
+  DropdownMenuGroup,
 } from "@/components/ui/dropdown-menu";
 import { toast } from "@/components/ui/toast";
 import { ChevronDown, UserRound, BarChart3, LogOut } from "lucide-react";
@@ -31,21 +32,24 @@ export const UserMenu = () => {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
-        <DropdownMenuLabel className="flex flex-col">
-          <span>César Augusto Díaz</span>
-          <span className="text-xs font-normal text-muted-foreground">
-            cesar@stockflow.app
-          </span>
-        </DropdownMenuLabel>
+        <DropdownMenuGroup>
+          <DropdownMenuLabel className="flex flex-col">
+            <span>César Augusto Díaz</span>
+            <span className="text-xs font-normal text-muted-foreground">
+              cesar@stockflow.app
+            </span>
+          </DropdownMenuLabel>
+        </DropdownMenuGroup>
+
         <DropdownMenuSeparator />
 
-        <Link to={"/"}>
+        <Link to={"/profile"}>
           <DropdownMenuItem>
             <UserRound className="size-4" /> Mi perfil
           </DropdownMenuItem>
         </Link>
 
-        <Link to={"/"}>
+        <Link to={"/reports"}>
           <DropdownMenuItem>
             <BarChart3 className="size-4" /> Reportes
           </DropdownMenuItem>
