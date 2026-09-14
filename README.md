@@ -14,7 +14,7 @@ Un mini POS pensado como el colmado de tu barrio: rápido, directo y sin vueltas
 [![SQL Server](https://img.shields.io/badge/SQL_Server-EF_Core-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
 [![License](https://img.shields.io/badge/license-académico-lightgrey?style=flat-square)]()
 
-*Proyecto académico de práctica — Programación II/III*
+_Proyecto académico de práctica — Programación II/III_
 
 </div>
 
@@ -46,18 +46,18 @@ Construido con **arquitectura Onion** en el backend (separación estricta de cap
 
 ## ✨ Funcionalidades
 
-| Módulo | Descripción |
-| --- | --- |
-| 🔐 **Autenticación** | Registro e inicio de sesión con JWT. |
-| 📊 **Dashboard** | Ventas del día/mes, productos con stock bajo, gráfico de ventas por categoría. |
-| 📦 **Productos** | CRUD completo con SKU, precio, stock y categoría. |
-| 🏷️ **Categorías** | CRUD simple para organizar el catálogo. |
-| 🛒 **Nueva venta** | Carrito interactivo: agrega productos, ajusta cantidades y confirma — el stock se descuenta automáticamente. |
-| 🧾 **Historial de ventas** | Listado filtrable por fecha con detalle de cada venta. |
-| 📥 **Movimientos de inventario** | Registro de entradas/ajustes manuales de stock. |
-| 📈 **Reportes** | Ventas por período y productos más vendidos, con gráficos. |
-| 📤 **Exportación** | Exporta reportes a Excel, JSON o TXT (patrón Strategy). |
-| 👤 **Perfil** | Datos del usuario autenticado. |
+| Módulo                           | Descripción                                                                                                  |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| 🔐 **Autenticación**             | Registro e inicio de sesión con JWT.                                                                         |
+| 📊 **Dashboard**                 | Ventas del día/mes, productos con stock bajo, gráfico de ventas por categoría.                               |
+| 📦 **Productos**                 | CRUD completo con SKU, precio, stock y categoría.                                                            |
+| 🏷️ **Categorías**                | CRUD simple para organizar el catálogo.                                                                      |
+| 🛒 **Nueva venta**               | Carrito interactivo: agrega productos, ajusta cantidades y confirma — el stock se descuenta automáticamente. |
+| 🧾 **Historial de ventas**       | Listado filtrable por fecha con detalle de cada venta.                                                       |
+| 📥 **Movimientos de inventario** | Registro de entradas/ajustes manuales de stock.                                                              |
+| 📈 **Reportes**                  | Ventas por período y productos más vendidos, con gráficos.                                                   |
+| 📤 **Exportación**               | Exporta reportes a Excel, JSON o TXT (patrón Strategy).                                                      |
+| 👤 **Perfil**                    | Datos del usuario autenticado.                                                                               |
 
 ---
 
@@ -68,6 +68,7 @@ Construido con **arquitectura Onion** en el backend (separación estricta de cap
 <td valign="top" width="33%">
 
 **⚙️ Backend**
+
 - .NET 10 / ASP.NET Core Web API
 - Entity Framework Core 10
 - ASP.NET Core Identity + JWT
@@ -78,6 +79,7 @@ Construido con **arquitectura Onion** en el backend (separación estricta de cap
 <td valign="top" width="33%">
 
 **🎨 Frontend**
+
 - React 19 + TypeScript
 - Vite
 - React Router 8
@@ -89,6 +91,7 @@ Construido con **arquitectura Onion** en el backend (separación estricta de cap
 <td valign="top" width="33%">
 
 **🗄️ Base de datos**
+
 - SQL Server
 - EF Core Migrations
 - Repositorios + Unit of Work
@@ -116,6 +119,7 @@ Arquitectura **Onion**, con dependencias fluyendo siempre hacia el centro (`Doma
 ```
 
 **Principios aplicados:**
+
 - Repositorios + interfaces para acceso a datos.
 - DTOs de entrada/salida (las entidades nunca se exponen directamente).
 - Inyección de dependencias en todas las capas.
@@ -158,14 +162,14 @@ colmado/
 
 ## 🗃️ Modelo de datos
 
-| Entidad | Descripción |
-| --- | --- |
-| `User` | Usuario autenticado del sistema. |
-| `Product` | Nombre, SKU, precio, stock actual, categoría, unidad de medida. |
-| `Category` | Categoría de producto. |
-| `Sale` | Cabecera de venta: fecha, usuario, total. |
-| `SaleItem` | Línea de venta (producto, cantidad, precio unitario, subtotal) — relación 1:N con `Sale`. |
-| `StockMovement` | Entradas/ajustes manuales de inventario. |
+| Entidad         | Descripción                                                                               |
+| --------------- | ----------------------------------------------------------------------------------------- |
+| `User`          | Usuario autenticado del sistema.                                                          |
+| `Product`       | Nombre, SKU, precio, stock actual, categoría, unidad de medida.                           |
+| `Category`      | Categoría de producto.                                                                    |
+| `Sale`          | Cabecera de venta: fecha, usuario, total.                                                 |
+| `SaleItem`      | Línea de venta (producto, cantidad, precio unitario, subtotal) — relación 1:N con `Sale`. |
+| `StockMovement` | Entradas/ajustes manuales de inventario.                                                  |
 
 ```
 Sale (1) ───< (N) SaleItem (N) >─── (1) Product >─── (1) Category
@@ -207,18 +211,6 @@ npm run dev
 ```
 
 El frontend queda disponible en `http://localhost:5173`.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Roles: `admin` vs `vendedor`
-- [ ] Alertas de stock bajo
-- [ ] Búsqueda de producto por SKU / código de barras
-- [ ] Reporte de rentabilidad (costo vs precio de venta)
-- [ ] Refresh token para sesiones prolongadas
-- [ ] Tests unitarios (xUnit + Moq)
-- [ ] Dockerización del proyecto
 
 ---
 

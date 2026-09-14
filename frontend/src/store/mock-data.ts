@@ -17,6 +17,8 @@ export type Product = {
   categoryId: string;
 };
 
+export type CartLine = { id: string; name: string; price: number; qty: number };
+
 export type SaleItem = {
   productId: string;
   productName: string;
