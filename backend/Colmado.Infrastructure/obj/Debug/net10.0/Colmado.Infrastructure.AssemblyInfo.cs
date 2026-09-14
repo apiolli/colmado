@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Colmado.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c29a42a2a0aff161052b30e7dbe9ecdf44b875a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb0f3f3ac3a5ada451d65f1edda362e01dd93125")]
 [assembly: System.Reflection.AssemblyProductAttribute("Colmado.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Colmado.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
