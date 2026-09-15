@@ -1,3 +1,10 @@
+import {
+  CircleDollarSign,
+  Package,
+  TrendingUp,
+  TriangleAlert,
+} from "lucide-react";
+
 export type Category = {
   id: string;
   name: string;
@@ -502,5 +509,36 @@ export const notifications: AppNotification[] = [
     time: "Ayer",
     kind: "sistema",
     unread: false,
+  },
+];
+
+export const summary = [
+  {
+    label: "Ventas de hoy",
+    value: money(2310),
+    delta: "+12.4% vs ayer",
+    icon: CircleDollarSign,
+    trend: "up" as const,
+  },
+  {
+    label: "Ventas del mes",
+    value: money(48920),
+    delta: "+8.1% vs julio",
+    icon: TrendingUp,
+    trend: "up" as const,
+  },
+  {
+    label: "Productos activos",
+    value: "340",
+    delta: "16 nuevos este mes",
+    icon: Package,
+    trend: "up" as const,
+  },
+  {
+    label: "Stock bajo",
+    value: String(lowStock.length),
+    delta: "Requieren reposición",
+    icon: TriangleAlert,
+    trend: "down" as const,
   },
 ];
