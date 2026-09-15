@@ -8,7 +8,6 @@ import {
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
-import { useDialog } from "@/hooks/useDialog";
 import { money, saleTotal, type Sale } from "@/store/mock-data";
 import { Receipt } from "lucide-react";
 import { useState } from "react";

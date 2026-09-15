@@ -17,9 +17,10 @@ import {
 } from "@/components/ui/table";
 import { sales, money, saleTotal } from "@/store/mock-data";
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
 
 export const LastSales = () => {
+  const navigate = useNavigate();
   return (
     <Card className="lg:col-span-2">
       <CardHeader className="flex-row items-center justify-between space-y-0">
@@ -27,10 +28,12 @@ export const LastSales = () => {
           <CardTitle>Últimas ventas</CardTitle>
           <CardDescription>Transacciones más recientes</CardDescription>
         </div>
-        <Button variant="ghost" size="sm">
-          <Link to="/ventas">
-            Ver todas <ArrowUpRight className="size-4" />
-          </Link>
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={() => navigate("/sales-history")}
+        >
+          Ver todas <ArrowUpRight className="size-4" />
         </Button>
       </CardHeader>
       <CardContent>
