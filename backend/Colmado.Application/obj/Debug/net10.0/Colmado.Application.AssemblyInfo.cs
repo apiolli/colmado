@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Colmado.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a1b041b59125a4f92328e378cb7949d34aaee2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b597391bd44b568e6c7c343a657e65b98e9f252")]
 [assembly: System.Reflection.AssemblyProductAttribute("Colmado.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Colmado.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
