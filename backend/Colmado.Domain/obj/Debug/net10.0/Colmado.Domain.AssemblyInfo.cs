@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Colmado.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b597391bd44b568e6c7c343a657e65b98e9f252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+730c5923f75318b2bc4bf8fe41bf4bae10fa9edd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Colmado.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Colmado.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
