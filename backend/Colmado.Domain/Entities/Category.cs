@@ -12,10 +12,10 @@ namespace Colmado.Domain.Entities
         public string Description { get; set; } = string.Empty;
         public string Color { get; set; } = string.Empty;
         public string Icon {get; set; } = string.Empty;
+        public List<Product> Products { get; set; } = [];
 
         public Guid UserId { get; set; }
-        public User? User { get; set; }
-        
+        public User? User { get; set; }    
         
     }
 }
