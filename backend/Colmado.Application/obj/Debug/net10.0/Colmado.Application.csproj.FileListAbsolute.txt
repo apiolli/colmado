@@ -13,3 +13,4 @@ C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\refint\Colmado.Application.dll
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.pdb
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\ref\Colmado.Application.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Application\obj\Debug\net10.0\Colmado.Application.sourcelink.json

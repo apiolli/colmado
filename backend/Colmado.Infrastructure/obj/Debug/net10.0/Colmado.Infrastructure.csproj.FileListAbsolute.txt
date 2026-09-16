@@ -15,3 +15,6 @@ C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net10.0\refint\Colmado.Infrastructure.dll
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net10.0\Colmado.Infrastructure.pdb
 C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net10.0\ref\Colmado.Infrastructure.dll
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\bin\Debug\net10.0\Colmado.Infrastructure.runtimeconfig.json
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net10.0\Colmado.Infrastructure.sourcelink.json
+C:\Users\DELL\Desktop\Setup\colmado\backend\Colmado.Infrastructure\obj\Debug\net10.0\Colmado.Infrastructure.genruntimeconfig.cache
