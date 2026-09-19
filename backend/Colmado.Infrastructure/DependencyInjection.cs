@@ -29,6 +29,7 @@ namespace Colmado.Infrastructure
 
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
             services.AddScoped<IPasswordHasher, PasswordHasher>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
 
             return services;
         }

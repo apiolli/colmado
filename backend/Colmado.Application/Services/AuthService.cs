@@ -13,13 +13,15 @@ namespace Colmado.Application.Services
         private readonly IUnitOfWork _uow;
         private readonly IPasswordHasher _hasher;
         private readonly IJwtTokenGenerator _jwt;
+        private readonly ICurrentUserService _currentUser;
         private readonly IMapper _mapper;
 
-        public AuthService(IUnitOfWork uow, IPasswordHasher hasher, IJwtTokenGenerator jwt, IMapper mapper)
+        public AuthService(IUnitOfWork uow, IPasswordHasher hasher, IJwtTokenGenerator jwt, ICurrentUserService currentUser, IMapper mapper)
         {
             _uow = uow;
             _hasher = hasher;
             _jwt = jwt;
+            _currentUser = currentUser;
             _mapper = mapper;
         }
 
@@ -60,8 +62,9 @@ namespace Colmado.Application.Services
             };
         }
 
-        public async Task<UserProfileDto> GetProfileAsync(Guid userId, CancellationToken ct = default)
+        public async Task<UserProfileDto> GetProfileAsync(CancellationToken ct = default)
         {
+            var userId = _currentUser.UserId;
             var user = await _uow.Users.GetByIdAsync(userId, userId, ct)
                 ?? throw new NotFoundException("Usuario no encontrado.");
             return _mapper.Map<UserProfileDto>(user);

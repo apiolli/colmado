@@ -1,6 +1,7 @@
 using AutoMapper;
 using Colmado.Application.DTOs.Sales;
 using Colmado.Application.Interfaces;
+using Colmado.Application.Interfaces.Auth;
 using Colmado.Application.Interfaces.Services;
 using Colmado.Domain.Entities;
 using Colmado.Domain.Enums;
@@ -11,32 +12,35 @@ namespace Colmado.Application.Services
     public class SaleService : ISaleService
     {
         private readonly IUnitOfWork _uow;
+        private readonly ICurrentUserService _currentUser;
         private readonly IMapper _mapper;
 
-        public SaleService(IUnitOfWork uow, IMapper mapper)
+        public SaleService(IUnitOfWork uow, ICurrentUserService currentUser, IMapper mapper)
         {
             _uow = uow;
+            _currentUser = currentUser;
             _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<SaleResponseDto>> GetAllAsync(Guid userId, DateTime? from = null, DateTime? to = null, CancellationToken ct = default)
+        public async Task<IReadOnlyList<SaleResponseDto>> GetAllAsync(DateTime? from = null, DateTime? to = null, CancellationToken ct = default)
         {
-            var items = await _uow.Sales.ListByDateRangeAsync(userId, from, to, ct);
+            var items = await _uow.Sales.ListByDateRangeAsync(_currentUser.UserId, from, to, ct);
             return _mapper.Map<IReadOnlyList<SaleResponseDto>>(items);
         }
 
-        public async Task<SaleResponseDto> GetByIdAsync(Guid id, Guid userId, CancellationToken ct = default)
+        public async Task<SaleResponseDto> GetByIdAsync(Guid id, CancellationToken ct = default)
         {
-            var entity = await _uow.Sales.GetWithItemsAsync(id, userId, ct)
+            var entity = await _uow.Sales.GetWithItemsAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Venta no encontrada.");
             return _mapper.Map<SaleResponseDto>(entity);
         }
 
-        public async Task<SaleResponseDto> CreateAsync(CreateSaleDto dto, Guid userId, CancellationToken ct = default)
+        public async Task<SaleResponseDto> CreateAsync(CreateSaleDto dto, CancellationToken ct = default)
         {
             if (dto.Items.Count == 0)
                 throw new BadRequestException("La venta debe tener al menos un producto.");
 
+            var userId = _currentUser.UserId;
             await _uow.BeginTransactionAsync(ct);
             try
             {
@@ -127,8 +131,9 @@ namespace Colmado.Application.Services
             }
         }
 
-        public async Task CancelAsync(Guid id, Guid userId, CancellationToken ct = default)
+        public async Task CancelAsync(Guid id, CancellationToken ct = default)
         {
+            var userId = _currentUser.UserId;
             await _uow.BeginTransactionAsync(ct);
             try
             {

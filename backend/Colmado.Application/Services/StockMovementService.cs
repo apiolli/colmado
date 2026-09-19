@@ -1,6 +1,7 @@
 using AutoMapper;
 using Colmado.Application.DTOs.StockMovements;
 using Colmado.Application.Interfaces;
+using Colmado.Application.Interfaces.Auth;
 using Colmado.Application.Interfaces.Services;
 using Colmado.Domain.Entities;
 using Colmado.Domain.Enums;
@@ -11,29 +12,32 @@ namespace Colmado.Application.Services
     public class StockMovementService : IStockMovementService
     {
         private readonly IUnitOfWork _uow;
+        private readonly ICurrentUserService _currentUser;
         private readonly IMapper _mapper;
 
-        public StockMovementService(IUnitOfWork uow, IMapper mapper)
+        public StockMovementService(IUnitOfWork uow, ICurrentUserService currentUser, IMapper mapper)
         {
             _uow = uow;
+            _currentUser = currentUser;
             _mapper = mapper;
         }
 
-        public async Task<IReadOnlyList<StockMovementResponseDto>> GetAllAsync(Guid userId, DateTime? from = null, DateTime? to = null, CancellationToken ct = default)
+        public async Task<IReadOnlyList<StockMovementResponseDto>> GetAllAsync(DateTime? from = null, DateTime? to = null, CancellationToken ct = default)
         {
-            var items = await _uow.StockMovements.ListByDateRangeAsync(userId, from, to, ct);
+            var items = await _uow.StockMovements.ListByDateRangeAsync(_currentUser.UserId, from, to, ct);
             return _mapper.Map<IReadOnlyList<StockMovementResponseDto>>(items);
         }
 
-        public async Task<StockMovementResponseDto> GetByIdAsync(Guid id, Guid userId, CancellationToken ct = default)
+        public async Task<StockMovementResponseDto> GetByIdAsync(Guid id, CancellationToken ct = default)
         {
-            var entity = await _uow.StockMovements.GetByIdAsync(id, userId, ct)
+            var entity = await _uow.StockMovements.GetByIdAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Movimiento no encontrado.");
             return _mapper.Map<StockMovementResponseDto>(entity);
         }
 
-        public async Task<StockMovementResponseDto> CreateAsync(CreateStockMovementDto dto, Guid userId, CancellationToken ct = default)
+        public async Task<StockMovementResponseDto> CreateAsync(CreateStockMovementDto dto, CancellationToken ct = default)
         {
+            var userId = _currentUser.UserId;
             await _uow.BeginTransactionAsync(ct);
             try
             {
@@ -82,8 +86,9 @@ namespace Colmado.Application.Services
             }
         }
 
-        public async Task DeleteAsync(Guid id, Guid userId, CancellationToken ct = default)
+        public async Task DeleteAsync(Guid id, CancellationToken ct = default)
         {
+            var userId = _currentUser.UserId;
             await _uow.BeginTransactionAsync(ct);
             try
             {

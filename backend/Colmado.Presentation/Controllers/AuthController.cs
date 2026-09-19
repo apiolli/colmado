@@ -2,7 +2,6 @@ using Colmado.Application.DTOs.Auth;
 using Colmado.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace Colmado.Presentation.Controllers
 {
@@ -37,10 +36,8 @@ namespace Colmado.Presentation.Controllers
         [Authorize]
         public async Task<ActionResult<UserProfileDto>> Me(CancellationToken ct)
         {
-            var result = await _service.GetProfileAsync(GetUserId(), ct);
+            var result = await _service.GetProfileAsync(ct);
             return Ok(result);
         }
-
-        private Guid GetUserId() => Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
     }
 }

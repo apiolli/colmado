@@ -36,6 +36,7 @@ namespace Colmado.Presentation.Middlewares
                 NotFoundException => (HttpStatusCode.NotFound, ex.Message),
                 BadRequestException => (HttpStatusCode.BadRequest, ex.Message),
                 ConflictException => (HttpStatusCode.Conflict, ex.Message),
+                UnauthorizedException => (HttpStatusCode.Unauthorized, ex.Message),
                 ValidationException vex => (HttpStatusCode.BadRequest,
                     string.Join("; ", vex.Errors.Select(e => $"{e.PropertyName}: {e.ErrorMessage}"))),
                 _ => (HttpStatusCode.InternalServerError, "Ocurrió un error interno.")

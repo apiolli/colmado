@@ -2,7 +2,6 @@ using Colmado.Application.DTOs.Sales;
 using Colmado.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 
 namespace Colmado.Presentation.Controllers
 {
@@ -21,26 +20,24 @@ namespace Colmado.Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<SaleResponseDto>>> GetAll(
             [FromQuery] DateTime? from, [FromQuery] DateTime? to, CancellationToken ct)
-            => Ok(await _service.GetAllAsync(GetUserId(), from, to, ct));
+            => Ok(await _service.GetAllAsync(from, to, ct));
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<SaleResponseDto>> GetById(Guid id, CancellationToken ct)
-            => Ok(await _service.GetByIdAsync(id, GetUserId(), ct));
+            => Ok(await _service.GetByIdAsync(id, ct));
 
         [HttpPost]
         public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto, CancellationToken ct)
         {
-            var created = await _service.CreateAsync(dto, GetUserId(), ct);
+            var created = await _service.CreateAsync(dto, ct);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Cancel(Guid id, CancellationToken ct)
         {
-            await _service.CancelAsync(id, GetUserId(), ct);
+            await _service.CancelAsync(id, ct);
             return NoContent();
         }
-
-        private Guid GetUserId() => Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
     }
 }
