@@ -1,0 +1,55 @@
+## Visual Studio y herramientas de desarrollo
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Carpetas de compilación y binarios
+[Bb]in/
+[Oo]bj/
+
+## Archivos de publicación y logs
+*.log
+*.tmp
+publish/
+_PublishedWebsites/
+
+## Configuraciones locales y secretos de desarrollo
+appsettings.Development.json
+secrets.json
+.env
+
+## Herramientas de pruebas y cobertura
+TestResults/
+coverage/
+
+## Paquetes NuGet
+*.nupkg
+packages/
+!**/packages/build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
