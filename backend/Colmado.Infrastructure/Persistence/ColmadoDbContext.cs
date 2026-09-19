@@ -13,6 +13,12 @@ namespace Colmado.Infrastructure.Persistence
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<StockMovement> StockMovements { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+        public DbSet<SaleItem> SalesItems { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

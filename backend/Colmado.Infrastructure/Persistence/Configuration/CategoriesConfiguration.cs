@@ -18,10 +18,10 @@ namespace Colmado.Infrastructure.Persistence.Configuration
                 .HasForeignKey(e => e.CategoryId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasOne(p => p.User)
+            builder.HasOne(c => c.User)
                 .WithMany(u => u.Categories)
-                .HasForeignKey(p => p.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.Property(c => c.Name)
                 .IsRequired()

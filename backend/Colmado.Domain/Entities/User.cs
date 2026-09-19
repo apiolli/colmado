@@ -12,7 +12,7 @@ namespace Colmado.Domain.Entities
             public string Email { get; set; } = string.Empty;
             public string PasswordHash { get; set; } = string.Empty;
 
-            public string MarketName { get; set; } = string.Empty;
+            public string? MarketName { get; set; } = string.Empty;
             public string? PhoneNumber { get; set; }     
 
 

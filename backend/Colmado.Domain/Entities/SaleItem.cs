@@ -19,6 +19,6 @@ namespace Colmado.Domain.Entities
         public decimal Subtotal { get; set; }
 
         public User? User { get; set; }
-        public int UserId { get; set; }
+        public Guid UserId { get; set; }
     }
 }

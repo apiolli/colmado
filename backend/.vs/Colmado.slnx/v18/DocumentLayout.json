@@ -1,7 +1,80 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B038FAA8-71C5-4CD6-A644-FBA4776218B3}|Solution Items{B038FAA8-71C5-4CD6-A644-FBA4776218B3}|C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{B038FAA8-71C5-4CD6-A644-FBA4776218B3}|Solution Items{B038FAA8-71C5-4CD6-A644-FBA4776218B3}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\migrations\\20260919153007_salesandstockconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\migrations\\20260919153007_salesandstockconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\migrations\\20260919151212_initialcreateconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\migrations\\20260919151212_initialcreateconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\colmadodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\colmadodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\salesitemsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\salesitemsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\stockmovementsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\stockmovementsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\usersconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\usersconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\categoriesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\categoriesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\productsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\productsconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.infrastructure\\persistence\\configuration\\salesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{051E1DB9-BB76-59DE-A449-2268F783F802}|Colmado.Infrastructure\\Colmado.Infrastructure.csproj|solutionrelative:colmado.infrastructure\\persistence\\configuration\\salesconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\stockmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\stockmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\saleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\saleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|c:\\users\\dell\\desktop\\setup\\colmado\\apiolli\\colmado\\backend\\colmado.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBB4327C-3036-2666-A9A9-9FBF85E1946C}|Colmado.Domain\\Colmado.Domain.csproj|solutionrelative:colmado.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,7 +126,229 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001407|",
+              "WhenOpened": "2026-09-19T15:37:07.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260919153007_SalesAndStockConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919153007_SalesAndStockConfig.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Migrations\\20260919153007_SalesAndStockConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919153007_SalesAndStockConfig.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Migrations\\20260919153007_SalesAndStockConfig.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:30:07.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsersConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\UsersConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\UsersConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\UsersConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\UsersConfiguration.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T14:58:22.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StockMovementsConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\StockMovementsConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\StockMovementsConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\StockMovementsConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\StockMovementsConfiguration.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:08:23.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductsConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\ProductsConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\ProductsConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\ProductsConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\ProductsConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T02:26:43.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriesConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\CategoriesConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\CategoriesConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\CategoriesConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\CategoriesConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T02:25:51.877Z"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalesItemsConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\SalesItemsConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\SalesItemsConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\SalesItemsConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\SalesItemsConfiguration.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:26:27.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColmadoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\ColmadoDbContext.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\ColmadoDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\ColmadoDbContext.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\ColmadoDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T02:25:57.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260919151212_InitialCreateConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919151212_InitialCreateConfig.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Migrations\\20260919151212_InitialCreateConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919151212_InitialCreateConfig.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Migrations\\20260919151212_InitialCreateConfig.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:12:12.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SalesConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\SalesConfiguration.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Persistence\\Configuration\\SalesConfiguration.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Persistence\\Configuration\\SalesConfiguration.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Persistence\\Configuration\\SalesConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:08:24.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StockMovement.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\StockMovement.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\StockMovement.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\StockMovement.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\StockMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:04:07.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Sale.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\Sale.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Sale.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:03:55.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SaleItem.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\SaleItem.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\SaleItem.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\SaleItem.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\SaleItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:04:02.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260919151054_InitialCreateConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Migrations\\20260919151054_InitialCreateConfig.cs",
+              "ViewState": "AgIAAP0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:10:54.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:03:51.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T14:57:26.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20260919150655_UsersAndProductsTable.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs",
+              "RelativeDocumentMoniker": "Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs",
+              "RelativeToolTip": "Colmado.Infrastructure\\Migrations\\20260919150655_UsersAndProductsTable.cs",
+              "ViewState": "AgIAANcBAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:06:55.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Colmado.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Colmado.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T02:28:12.47Z"
             }
           ]
         }

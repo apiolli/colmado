@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V9tRCoCgJsU=",
+  "dgSpecHash": "+mKbckS4jt0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
