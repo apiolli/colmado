@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ju16zLUjnYc=",
+  "dgSpecHash": "BRkdfAvUhRo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Presentation\\Colmado.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Presentation\\Colmado.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\16.2.0\\automapper.16.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",

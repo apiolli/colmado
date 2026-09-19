@@ -545,11 +545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
       "projectName": "Colmado.Application",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Application\\Colmado.Application.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Application\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -571,8 +571,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Colmado.Domain.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\apiolli\\colmado\\backend\\Colmado.Domain\\Colmado.Domain.csproj"
+            "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Domain\\Colmado.Domain.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\Setup\\colmado\\backend\\Colmado.Domain\\Colmado.Domain.csproj"
             }
           }
         }
