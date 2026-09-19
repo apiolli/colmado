@@ -37,6 +37,7 @@ namespace Colmado.Application.Services
         {
             var entity = await _uow.Products.GetByIdWithCategoryAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Producto no encontrado.");
+                
             return _mapper.Map<ProductResponseDto>(entity);
         }
 
@@ -84,6 +85,7 @@ namespace Colmado.Application.Services
         {
             var entity = await _uow.Products.GetByIdAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Producto no encontrado.");
+
             _uow.Products.Delete(entity);
             await _uow.SaveChangesAsync(ct);
         }

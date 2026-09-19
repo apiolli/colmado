@@ -28,6 +28,7 @@ namespace Colmado.Application.Services
         public async Task<AuthResponseDto> RegisterAsync(RegisterRequestDto dto, CancellationToken ct = default)
         {
             var email = dto.Email.Trim().ToLowerInvariant();
+
             if (await _uow.Users.ExistsEmailAsync(email, ct))
                 throw new ConflictException("El email ya está registrado.");
 
@@ -67,7 +68,16 @@ namespace Colmado.Application.Services
             var userId = _currentUser.UserId;
             var user = await _uow.Users.GetByIdAsync(userId, userId, ct)
                 ?? throw new NotFoundException("Usuario no encontrado.");
+                
             return _mapper.Map<UserProfileDto>(user);
+        }
+
+        public Task LogoutAsync(CancellationToken ct = default)
+        {
+            // El JWT es stateless: el cierre real ocurre en el cliente al descartar el token.
+            // Aquí solo se valida que exista una sesión activa (401 si no la hay).
+            _ = _currentUser.UserId;
+            return Task.CompletedTask;
         }
     }
 }

@@ -39,5 +39,13 @@ namespace Colmado.Presentation.Controllers
             var result = await _service.GetProfileAsync(ct);
             return Ok(result);
         }
+
+        [HttpPost("logout")]
+        [Authorize]
+        public async Task<IActionResult> Logout(CancellationToken ct)
+        {
+            await _service.LogoutAsync(ct);
+            return NoContent();
+        }
     }
 }

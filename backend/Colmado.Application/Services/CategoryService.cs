@@ -31,6 +31,7 @@ namespace Colmado.Application.Services
         {
             var entity = await _uow.Categories.GetByIdAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Categoría no encontrada.");
+
             return _mapper.Map<CategoryResponseDto>(entity);
         }
 
@@ -55,7 +56,9 @@ namespace Colmado.Application.Services
             var entity = await _uow.Categories.GetByIdAsync(id, userId, ct)
                 ?? throw new NotFoundException("Categoría no encontrada.");
 
-            if (await _uow.Categories.ExistsNameAsync(dto.Name, userId, id, ct))
+            var categoryExists = await _uow.Categories.ExistsNameAsync(dto.Name, userId, id, ct);
+
+            if (categoryExists)
                 throw new ConflictException("Ya existe una categoría con ese nombre.");
 
             _mapper.Map(dto, entity);
@@ -68,6 +71,7 @@ namespace Colmado.Application.Services
         {
             var entity = await _uow.Categories.GetByIdAsync(id, _currentUser.UserId, ct)
                 ?? throw new NotFoundException("Categoría no encontrada.");
+                
             _uow.Categories.Delete(entity);
             await _uow.SaveChangesAsync(ct);
         }

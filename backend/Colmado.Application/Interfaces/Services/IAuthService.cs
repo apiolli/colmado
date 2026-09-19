@@ -7,5 +7,6 @@ namespace Colmado.Application.Interfaces.Services
         Task<AuthResponseDto> RegisterAsync(RegisterRequestDto dto, CancellationToken ct = default);
         Task<AuthResponseDto> LoginAsync(LoginRequestDto dto, CancellationToken ct = default);
         Task<UserProfileDto> GetProfileAsync(CancellationToken ct = default);
+        Task LogoutAsync(CancellationToken ct = default);
     }
 }
