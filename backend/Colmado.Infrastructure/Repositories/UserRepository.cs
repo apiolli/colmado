@@ -3,7 +3,7 @@ using Colmado.Domain.Entities;
 using Colmado.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
-namespace Colmado.Infrastructure.Persistence.Repositories
+namespace Colmado.Infrastructure.Repositories
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {

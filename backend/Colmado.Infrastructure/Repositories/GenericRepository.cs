@@ -3,7 +3,7 @@ using Colmado.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Colmado.Infrastructure.Persistence.Repositories
+namespace Colmado.Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
@@ -18,18 +18,24 @@ namespace Colmado.Infrastructure.Persistence.Repositories
 
         public virtual async Task<T?> GetByIdAsync(Guid id, Guid userId, CancellationToken ct = default)
         {
-            var entity = await _dbSet.FindAsync(new object[] { id }, ct);
+            var entity = await _dbSet.FindAsync(new { id }, ct);
+
             if (entity is null) return null;
+
             var prop = typeof(T).GetProperty("UserId");
+
             if (prop is not null && prop.GetValue(entity) is Guid owner && owner != userId)
                 return null;
+
             return entity;
         }
 
         public virtual async Task<IReadOnlyList<T>> ListAsync(Guid userId, CancellationToken ct = default)
         {
             var prop = typeof(T).GetProperty("UserId");
+
             if (prop is null) return await _dbSet.ToListAsync(ct);
+
             return await _dbSet.Where(e => EF.Property<Guid>(e, "UserId") == userId).ToListAsync(ct);
         }
 

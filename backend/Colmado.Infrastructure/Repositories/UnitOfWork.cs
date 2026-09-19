@@ -1,9 +1,9 @@
 using Colmado.Application.Interfaces;
 using Colmado.Application.Interfaces.Repositories;
-using Colmado.Infrastructure.Persistence.Repositories;
+using Colmado.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace Colmado.Infrastructure.Persistence
+namespace Colmado.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {

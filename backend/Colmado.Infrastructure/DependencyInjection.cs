@@ -3,7 +3,7 @@ using Colmado.Application.Interfaces.Auth;
 using Colmado.Application.Interfaces.Repositories;
 using Colmado.Infrastructure.Auth;
 using Colmado.Infrastructure.Persistence;
-using Colmado.Infrastructure.Persistence.Repositories;
+using Colmado.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
