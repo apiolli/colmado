@@ -1,6 +1,6 @@
 namespace Colmado.Application.DTOs.Auth
 {
-    public class RegisterRequestDto
+    public record RegisterRequestDto
     {
         public string Name { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;

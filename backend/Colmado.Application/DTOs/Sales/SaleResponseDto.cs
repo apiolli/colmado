@@ -2,7 +2,7 @@ using Colmado.Domain.Enums;
 
 namespace Colmado.Application.DTOs.Sales
 {
-    public class SaleResponseDto
+    public record SaleResponseDto
     {
         public Guid Id { get; set; }
         public string Code { get; set; } = string.Empty;

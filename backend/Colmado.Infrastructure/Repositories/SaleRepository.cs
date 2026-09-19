@@ -1,4 +1,4 @@
-using Colmado.Application.Interfaces.Repositories;
+using Colmado.Domain.Interfaces;
 using Colmado.Domain.Entities;
 using Colmado.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

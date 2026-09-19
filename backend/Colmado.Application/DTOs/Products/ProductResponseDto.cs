@@ -1,6 +1,6 @@
 namespace Colmado.Application.DTOs.Products
 {
-    public class ProductResponseDto
+    public record ProductResponseDto
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;

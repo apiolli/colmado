@@ -1,6 +1,4 @@
-using Colmado.Application.Interfaces.Repositories;
-
-namespace Colmado.Application.Interfaces
+namespace Colmado.Domain.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {

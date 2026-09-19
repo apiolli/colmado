@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace Colmado.Application.Interfaces.Repositories
+namespace Colmado.Domain.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {

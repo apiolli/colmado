@@ -1,6 +1,5 @@
-﻿using Colmado.Application.Interfaces;
-using Colmado.Application.Interfaces.Auth;
-using Colmado.Application.Interfaces.Repositories;
+﻿using Colmado.Application.Interfaces.Auth;
+using Colmado.Domain.Interfaces;
 using Colmado.Infrastructure.Auth;
 using Colmado.Infrastructure.Persistence;
 using Colmado.Infrastructure.Repositories;

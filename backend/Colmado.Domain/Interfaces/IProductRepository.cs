@@ -1,6 +1,6 @@
 using Colmado.Domain.Entities;
 
-namespace Colmado.Application.Interfaces.Repositories
+namespace Colmado.Domain.Interfaces
 {
     public interface IProductRepository : IGenericRepository<Product>
     {

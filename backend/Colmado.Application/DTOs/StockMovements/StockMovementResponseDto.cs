@@ -2,7 +2,7 @@ using Colmado.Domain.Enums;
 
 namespace Colmado.Application.DTOs.StockMovements
 {
-    public class StockMovementResponseDto
+    public record StockMovementResponseDto
     {
         public Guid Id { get; set; }
         public Guid ProductId { get; set; }

@@ -1,6 +1,6 @@
 using AutoMapper;
 using Colmado.Application.DTOs.StockMovements;
-using Colmado.Application.Interfaces;
+using Colmado.Domain.Interfaces;
 using Colmado.Application.Interfaces.Auth;
 using Colmado.Application.Interfaces.Services;
 using Colmado.Domain.Entities;
