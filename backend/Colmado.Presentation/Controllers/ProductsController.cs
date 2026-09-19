@@ -19,15 +19,25 @@ namespace Colmado.Presentation.Controllers
 
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<ProductResponseDto>>> GetAll(CancellationToken ct)
-            => Ok(await _service.GetAllAsync(ct));
+        {
+            var response = await _service.GetAllAsync(ct);
+            return Ok(response);
+        }
+        
 
         [HttpGet("low-stock")]
         public async Task<ActionResult<IReadOnlyList<ProductResponseDto>>> GetLowStock(CancellationToken ct)
-            => Ok(await _service.GetLowStockAsync(ct));
+        {
+            var response = await _service.GetLowStockAsync(ct);
+            return Ok(response);
+        }
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<ProductResponseDto>> GetById(Guid id, CancellationToken ct)
-            => Ok(await _service.GetByIdAsync(id, ct));
+        {
+            var response = await _service.GetByIdAsync(id, ct);
+            return Ok(response);
+        }
 
         [HttpPost]
         public async Task<ActionResult<ProductResponseDto>> Create([FromBody] CreateProductDto dto, CancellationToken ct)
@@ -38,7 +48,10 @@ namespace Colmado.Presentation.Controllers
 
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<ProductResponseDto>> Update(Guid id, [FromBody] UpdateProductDto dto, CancellationToken ct)
-            => Ok(await _service.UpdateAsync(id, dto, ct));
+        {
+            var response = await _service.UpdateAsync(id, dto, ct);
+            return Ok(response);
+        }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id, CancellationToken ct)

@@ -20,11 +20,17 @@ namespace Colmado.Presentation.Controllers
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<SaleResponseDto>>> GetAll(
             [FromQuery] DateTime? from, [FromQuery] DateTime? to, CancellationToken ct)
-            => Ok(await _service.GetAllAsync(from, to, ct));
+        {
+            var response = await _service.GetAllAsync(from, to, ct);
+            return Ok(response);
+        }
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<SaleResponseDto>> GetById(Guid id, CancellationToken ct)
-            => Ok(await _service.GetByIdAsync(id, ct));
+        {
+            var response = await _service.GetByIdAsync(id, ct);
+            return Ok(response);
+        }
 
         [HttpPost]
         public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto, CancellationToken ct)

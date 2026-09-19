@@ -18,13 +18,18 @@ namespace Colmado.Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<StockMovementResponseDto>>> GetAll(
-            [FromQuery] DateTime? from, [FromQuery] DateTime? to, CancellationToken ct)
-            => Ok(await _service.GetAllAsync(from, to, ct));
+        public async Task<ActionResult<IReadOnlyList<StockMovementResponseDto>>> GetAll([FromQuery] DateTime? from, [FromQuery] DateTime? to, CancellationToken ct)
+        {
+            var response = await _service.GetAllAsync(from, to, ct);
+            return Ok(response);
+        }
 
         [HttpGet("{id:guid}")]
         public async Task<ActionResult<StockMovementResponseDto>> GetById(Guid id, CancellationToken ct)
-            => Ok(await _service.GetByIdAsync(id, ct));
+        {
+            var response = await _service.GetByIdAsync(id, ct);
+            return Ok(response);
+        }
 
         [HttpPost]
         public async Task<ActionResult<StockMovementResponseDto>> Create([FromBody] CreateStockMovementDto dto, CancellationToken ct)
